@@ -1,7 +1,7 @@
 var formulario = document.querySelector("form")
 
 formulario.onsubmit = function(e) {
-
+console.log("hola")
 
 
 
@@ -85,30 +85,16 @@ formulario.onsubmit = function(e) {
   }
 
  /*  if (estado === 'vacio') {
-
-
-
     soltero_form.nextElementSibling.classList.add("error") 
     casado_form.nextElementSibling.classList.add("error") 
   }
-
  */
 
 
 
 // // nacionalidades se "autovalidan", 
 // // porque ya sabemos que estan seleccionadas. 
-function agregarInvitado(nombre, edad, estado, nacionalidad) {
 
-    var lista = document.getElementById("invitados")
-    console.log(lista)
-    var div = document.createElement("div")
-    console.log(div)
-    div.innerText = "Nombre del invitado: " + nombre
-    lista.appendChild(div)
-    
-    
-    }
 
 if (nombre.length > 0 
   && (edad > 18 
@@ -117,7 +103,42 @@ if (nombre.length > 0
   agregarInvitado(nombre, edad, estado, nacionalidad)
 }
 }
-console.log(agregarInvitado)
 
+function agregarInvitado(nombre, edad, estado, nacionalidad) {
+
+  var lista = document.querySelector("ul")
+  console.log(lista)
+  var elementoLi = document.createElement("li")
+  console.log(elementoLi)
+  elementoLi.innerText = "Nombre del invitado: " + nombre 
+  elementiLiEdad=document.createElement ("li")
+  lista.appendChild(elementoLi)
+ elementoLi.classList.add("lista")
+  
+ var elementoLiEdad=document.createElement("li")
+  elementoLiEdad.innerText=" Edad: " + edad
+  lista.appendChild(elementoLiEdad)
+ elementoLiEdad.classList.add("lista")
+  
+ var elementoLiEstado=document.createElement("li")
+  elementoLiEstado.innerText=" Estado: " + estado 
+   lista.appendChild(elementoLiEstado)
+  elementoLiEstado.classList.add("lista")
+
+ var elementoLiPais=document.createElement("li")
+  elementoLiPais.innerText=" Nacionalidad: " + nacionalidad
+  lista.appendChild(elementoLiPais)
+ elementoLiPais.classList.add("lista")
+ 
+ var boton=document.createElement("button")
+ boton.innerText="eliminar invitado" 
+ lista.appendChild(boton)
+boton.classList.add("boton_eliminar") 
+
+boton.onclick = function() {
+  boton.parentNode.remove()
+}
+  }
+console.log(agregarInvitado)
 
 

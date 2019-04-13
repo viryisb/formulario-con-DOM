@@ -1,115 +1,142 @@
-.header{
-    display:flex;
-    justify-content: center;
-    flex-direction: column;
-    
-    background-color: rgba(255,93,177,1);
-    background: @include filter-gradient(#ff5db1, #ef017c, horizontal);
-    background: @include background-image(linear-gradient(left, rgba(255,93,177,1) 0%, rgba(239,1,124,0.74) 100%));
+header{
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   
+   background-color: rgba(255,93,177,1);
+   background: @include filter-gradient(#ff5db1, #ef017c, horizontal);
+   background: @include background-image(linear-gradient(left, rgba(255,93,177,1) 0%, rgba(239,1,124,0.74) 100%));
 }
 .textoSaludo{
-    text-align: center;
-    font-family: 'Pacifico', cursive, blue;
-    font-size: 30px;
-    
+   text-align: center;
+   font-family: 'Pacifico', cursive, blue;
+   font-size: 30px;
+   
 }
 .anotate{
-    text-align: center;
-    font-family: 'Poiret One', cursive;
-    font-size: 25px;
-    }
+   text-align: center;
+   font-family: 'Poiret One', cursive;
+   font-size: 25px;
+   }
 
 .body{
-   /*  background-color: red; */
-    display:flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    background-color: rgba(255,93,177,1);
-    background: @include filter-gradient(#ff5db1, #ef017c, horizontal);
-    background: @include background-image(linear-gradient(left, rgba(255,93,177,1) 0%, rgba(239,1,124,0.74) 100%));
+  /*  background-color: red; */
+   display:flex;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+   background-color: rgba(255,93,177,1);
+   background: @include filter-gradient(#ff5db1, #ef017c, horizontal);
+   background: @include background-image(linear-gradient(left, rgba(255,93,177,1) 0%, rgba(239,1,124,0.74) 100%));
+   
+   }
+   .error{
+       background-color: red;
+   }
+   .contenedor{
+      display: flex;
+      font-family: 'Noticia Text', serif;
+      font-size: 18px;
+      padding: 50px;
+      margin-bottom: 10px;
+      background-color: rgba(251,166,225,1);
+      background: @include filter-gradient(#fba6e1, #fba6e1, horizontal);
+      background: @include background-image(linear-gradient(left top, rgba(251,166,225,1) 0%, rgba(251,166,225,1) 19%, rgba(250,203,15,1) 97%, rgba(250,203,15,1) 100%));
     
-    }
-    .error{
-        background-color: red;
-    }
-    .contenedor{
-       display: flex;
-       font-family: 'Noticia Text', serif;
-       font-size: 18px;
-       padding: 50px;
-       margin-bottom: 10px;
-       background-color: rgba(251,166,225,1);
-       background: @include filter-gradient(#fba6e1, #fba6e1, horizontal);
-       background: @include background-image(linear-gradient(left top, rgba(251,166,225,1) 0%, rgba(251,166,225,1) 19%, rgba(250,203,15,1) 97%, rgba(250,203,15,1) 100%));
-     
-       border-radius: 55px 55px 55px 55px;
+      border-radius: 55px 55px 55px 55px;
 -moz-border-radius: 55px 55px 55px 55px;
 -webkit-border-radius: 55px 55px 55px 55px;
 border: 0px solid #000000;
-      
-    }
-    .formulario{
-       display: flex;
-       justify-content: space-around;
-       flex-direction: column;
-       /* background-color: purple; */
-       padding: 20px;
+     
+   }
+   .formulario{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+      /* background-color: purple; */
+      padding: 20px;
 
-    }
-    .nombre{
-       border: 20px, solid;
-       border-color: black, solid;
-    
-       /* background-color: green; */
-       padding: 2px;
-       margin:5px;
-    }
-    /* .apellido{
-    background-color: violet;
-    padding: 2px;
-       margin:5px;
-    } */
-    .edad{
-       /* background-color: yellow; */
-       padding: 2px;
-       margin:5px;
-    }
-    .Estado_civil{
-      /*  background-color: orangered; */
-       padding: 2px;
-       margin:5px;
-    
-    
-    }
-    .nacionalidad{
-       /* background-color: burlywood; */
-       padding: 2px;
-       margin:5px;
-    }
-    .boton button{
-        font-size:20px;
-        font-family: 'Noticia Text', serif;
-        font-weight:bold;
-        color:#1e1e1f;
-        background-color:yellow;
-        border:2px solid;
-        border-color: #1e1e1f, solid;
-        width:100px;
-        height:80px;
-       }
-    #invitados{
-        display:flex;
-        background-color: rgba(241,231,103,1);
+   }
+   .nombre{
+      border: 20px, solid;
+      border-color: black, solid;
+   
+      /* background-color: green; */
+      padding: 2px;
+      margin:5px;
+   }
+   /* .apellido{
+   background-color: violet;
+   padding: 2px;
+      margin:5px;
+   } */
+   .edad{
+      /* background-color: yellow; */
+      padding: 2px;
+      margin:5px;
+   }
+   .Estado_civil{
+     /*  background-color: orangered; */
+      padding: 2px;
+      margin:5px;
+   
+   
+   }
+   .nacionalidad{
+      /* background-color: burlywood; */
+      padding: 2px;
+      margin:5px;
+   }
+   .boton{
+       font-size:15px;
+       font-family: 'Noticia Text', serif;
+       font-weight:bold;
+       color:#1e1e1f;
+       background-color:yellow;
+       border:2px solid;
+       border-color: #1e1e1f, solid;
+       width:70px;
+       height:30px;
+      }
+      .boton_eliminar{
+         font-size:12px;
+         font-family: 'Noticia Text', serif;
+         font-weight:bold;
+         color:#1e1e1f;
+         background-color:yellow;
+         border:3px solid;
+         border-color: #1e1e1f, solid;
+         width:80px;
+         height:40px;
+         margin-top: 10px;
+        }
+        
+   #invitados{
+       display:flex;
+       background-color: rgba(241,231,103,1);
 background: @include filter-gradient(#f1e767, #feb645, horizontal);
 background: @include background-image(linear-gradient(left bottom, rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%));
-        padding: 2px;
-        align-content: center;
-    }
-    #invitados span{
-        font-family: 'Poiret One', cursive; 
-        font-size: 35px;
-        text-align: center;
-        
-        
-    }
+       padding: 2px;
+       align-content: center;
+   }
+   #invitados span{
+       font-family: 'Poiret One', cursive; 
+       font-size: 35px;
+       text-align: center;
+       
+       
+   }
+  /*  #invitados ul{
+      background-color: aqua;
+      padding-right: 2px;
+   } */
+  .lista{
+   font-family: 'Noticia Text', serif;
+   font-size: 15px;
+   list-style:none;
+   background-color: rgba(251,166,225,1);
+   background: @include filter-gradient(#fba6e1, #fba6e1, horizontal);
+   background: @include background-image(linear-gradient(left top, rgba(251,166,225,1) 0%, rgba(251,166,225,1) 19%, rgba(250,203,15,1) 97%, rgba(250,203,15,1) 100%));
+ padding: 5px;
+  
+  }
