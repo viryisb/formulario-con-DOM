@@ -109,6 +109,7 @@ header{
           width:80px;
           height:40px;
           margin-top: 10px;
+          margin-left: 430px;
            
          }
          
@@ -140,5 +141,7 @@ header{
     background: @include filter-gradient(#fba6e1, #fba6e1, horizontal);
     background: @include background-image(linear-gradient(left top, rgba(251,166,225,1) 0%, rgba(251,166,225,1) 19%, rgba(250,203,15,1) 97%, rgba(250,203,15,1) 100%));
   padding: 5px;
+
+  width:500px;
    
    }
