@@ -106,11 +106,16 @@ if (nombre.length > 0
 
 function agregarInvitado(nombre, edad, estado, nacionalidad) {
 
+ var nuevoUl= document.getElementById("invitados")
+  var crearNuevoUl=document.createElement("ul");
+  nuevoUl.appendChild(crearNuevoUl);
+
   var lista = document.querySelector("ul")
   console.log(lista)
   var elementoLi = document.createElement("li")
   console.log(elementoLi)
   elementoLi.innerText = "Nombre del invitado: " + nombre 
+  
   elementiLiEdad=document.createElement ("li")
   lista.appendChild(elementoLi)
  elementoLi.classList.add("lista")
@@ -135,10 +140,12 @@ function agregarInvitado(nombre, edad, estado, nacionalidad) {
  lista.appendChild(boton)
 boton.classList.add("boton_eliminar") 
 
+
+
+
 boton.onclick = function() {
-  boton.parentNode.remove()
-}
+    boton.parentNode.remove()
+    
+  }
   }
 console.log(agregarInvitado)
-
-
