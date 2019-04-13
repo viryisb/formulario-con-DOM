@@ -110,34 +110,34 @@ function agregarInvitado(nombre, edad, estado, nacionalidad) {
   var crearNuevoUl=document.createElement("ul");
   nuevoUl.appendChild(crearNuevoUl);
 
-  var lista = document.querySelector("ul")
-  console.log(lista)
+ /* var lista = document.querySelector("crearNuevoUl") */
+  /* console.log(lista)  */
   var elementoLi = document.createElement("li")
   console.log(elementoLi)
   elementoLi.innerText = "Nombre del invitado: " + nombre 
   
   elementiLiEdad=document.createElement ("li")
-  lista.appendChild(elementoLi)
+  crearNuevoUl.appendChild(elementoLi)
  elementoLi.classList.add("lista")
   
  var elementoLiEdad=document.createElement("li")
   elementoLiEdad.innerText=" Edad: " + edad
-  lista.appendChild(elementoLiEdad)
+  crearNuevoUl.appendChild(elementoLiEdad)
  elementoLiEdad.classList.add("lista")
   
  var elementoLiEstado=document.createElement("li")
   elementoLiEstado.innerText=" Estado: " + estado 
-   lista.appendChild(elementoLiEstado)
+   crearNuevoUl.appendChild(elementoLiEstado)
   elementoLiEstado.classList.add("lista")
 
  var elementoLiPais=document.createElement("li")
   elementoLiPais.innerText=" Nacionalidad: " + nacionalidad
-  lista.appendChild(elementoLiPais)
+ crearNuevoUl.appendChild(elementoLiPais)
  elementoLiPais.classList.add("lista")
  
  var boton=document.createElement("button")
  boton.innerText="eliminar invitado" 
- lista.appendChild(boton)
+ crearNuevoUl.appendChild(boton)
 boton.classList.add("boton_eliminar") 
 
 
