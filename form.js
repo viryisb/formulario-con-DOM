@@ -115,6 +115,7 @@ function agregarInvitado(nombre, edad, estado, nacionalidad) {
   var elementoLi = document.createElement("li")
   console.log(elementoLi)
   elementoLi.innerText = "Nombre del invitado: " + nombre 
+   elementoLi.setAttribute("contenteditable", "true") 
   
   elementiLiEdad=document.createElement ("li")
   crearNuevoUl.appendChild(elementoLi)
@@ -122,18 +123,24 @@ function agregarInvitado(nombre, edad, estado, nacionalidad) {
   
  var elementoLiEdad=document.createElement("li")
   elementoLiEdad.innerText=" Edad: " + edad
+  elementoLiEdad.setAttribute("contenteditable", "true") 
   crearNuevoUl.appendChild(elementoLiEdad)
  elementoLiEdad.classList.add("lista")
+ 
   
  var elementoLiEstado=document.createElement("li")
   elementoLiEstado.innerText=" Estado: " + estado 
+  elementoLiEstado.setAttribute("contenteditable", "true") 
    crearNuevoUl.appendChild(elementoLiEstado)
   elementoLiEstado.classList.add("lista")
+ 
 
  var elementoLiPais=document.createElement("li")
   elementoLiPais.innerText=" Nacionalidad: " + nacionalidad
+  elementoLiPais.setAttribute("contenteditable", "true") 
  crearNuevoUl.appendChild(elementoLiPais)
  elementoLiPais.classList.add("lista")
+ 
  
  var boton=document.createElement("button")
  boton.innerText="eliminar invitado" 
