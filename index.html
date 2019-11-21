@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>formulario</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="form.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Noticia+Text');
+    </style>
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Pacifico');
+            </style>
+            <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+ 
+</head>
+<div class="header">
+    <header>
+<div class="textoSaludo"><h1>Bienvenidos a mi fiesta</h1></div>
+    <div class="anotate"><h3>Si venís, anotate en la lista</h3></div>
+</header>
+</div>
+<div class="body">
+<body>
+  <div class="contenedor">
+     <div class="formulario">
+  <form action="./lista.html" method="GET" name="invitados">
+    <div class= "nombre">
+  Nombre:
+  <input placeholder="Escribi tu nombre" type="text" name="firstname">
+    </div>
+  <br/>
+ 
+  
+<div class="edad">
+  Edad:
+  <input placeholder="Escribi tu edad" type="text" name="age">
+</div>
+  <br/>
+  <div class= "Estado_civil">
+  Estado civil:
+  <br/>
+  <input type="radio" name="estado" value="disponible" checked> Soltero/a<br/>
+  <input type="radio" name="estado" value="taken"> Comprometido/a
+  <br/>
+</div>
+<div class="nacionalidad">
+  Nacionalidad:
+  <select name="Nacionalidad">
+    <option value="argentina">argentina</option>
+    <option value="chilena">chilena</option>
+    <option value="venezolana">venezolana</option>
+    <option value="uruguaya">uruguaya</option>
+    <option value="de un país copado">otra</option>
+    <br/>
+  </select>
+</div>
+<br/>
+<div class="boton">
+<input class="boton" type="submit"></input>
+</div> 
+  </form>
+  <!-- <div class="boton">
+        <button> Eliminar invitado</button>
+      </div> -->
+</div>
+</div>
+</div>
+<div id="invitados">
+    <span> Lista de invitados:</span>
+    <br/>
+<ul>
+
+
+</ul>
+
+
+  </div>
+  <script src="form.js"></script>
+</body>
+</div>
+</html>
